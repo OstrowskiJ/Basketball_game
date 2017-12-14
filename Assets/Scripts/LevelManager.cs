@@ -3,24 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour
+{
+	public float timeTillEnd = 0;
 
 	// Use this for initialization
 	void Start ()
 	{
+		Screen.orientation = ScreenOrientation.LandscapeLeft;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Space))
+
+		if (timeTillEnd > 0)
 		{
-			LoadNextScene();
+			timeTillEnd -= Time.deltaTime;
+			if (timeTillEnd < 0)
+			{
+				LoadNextScene();
+			}
 		}
 	}
 
-	void LoadNextScene()
+	public void LoadNextScene()
 	{
 		int currentIndex = SceneManager.GetActiveScene().buildIndex;
 		SceneManager.LoadScene(currentIndex + 1);
+	}
+
+	public void LoadPreviousLevel()
+	{
+		int currentIndex = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(currentIndex - 1);
 	}
 }
