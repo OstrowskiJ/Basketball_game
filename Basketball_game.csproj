@@ -221,6 +221,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallLauncher.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\GoalTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\ScoreAbsorber.cs" />
     <Compile Include="Assets\Scripts\ScoreDisplay.cs" />
