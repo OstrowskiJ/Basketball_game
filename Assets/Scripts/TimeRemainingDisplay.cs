@@ -20,4 +20,6 @@ public class TimeRemainingDisplay : MonoBehaviour {
     {
         text.text = "Time: " + remainingTime.timeTillEnd.ToString("F2");
     }
+
+
 }

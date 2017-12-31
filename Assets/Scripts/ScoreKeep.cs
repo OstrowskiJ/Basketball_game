@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ScoreKeep : MonoBehaviour
 {
-	public int score;
+	public int score = 0;
 
 	// Use this for initialization
 	void Start ()
 	 {
-		 DontDestroyOnLoad(this.gameObject);
+		 DontDestroyOnLoad(gameObject);
 	 }
 	
 	// Update is called once per frame
@@ -17,9 +17,9 @@ public class ScoreKeep : MonoBehaviour
 		
 	}
 
-	void OnCollisionEnter(Collision colission)
+	public void IncrementScore(int value)
 	{
-		score++;
-		print("Ball hitted, your score:" + score);
+		score += value;
+	    print(score);
 	}
 }
