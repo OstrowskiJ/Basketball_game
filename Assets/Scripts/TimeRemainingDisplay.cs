@@ -18,7 +18,7 @@ public class TimeRemainingDisplay : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        text.text = "Time: " + remainingTime.timeTillEnd.ToString("F2");
+        text.text = "T i m e:   " + remainingTime.timeTillEnd.ToString("F2");
     }
 
 

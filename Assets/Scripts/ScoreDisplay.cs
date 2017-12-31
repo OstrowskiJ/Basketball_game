@@ -19,6 +19,6 @@ public class ScoreDisplay : MonoBehaviour
 	void Update()
 	{
 		if (score != null)
-			text.text = "Score: " + score.score;
+			text.text = "S c o r e:   " + score.score;
 	}
 }

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basketball_game", "Basketball_game.csproj", "{EC229CD9-75DB-83EA-9B09-88D53AA7134D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basketball_game.Editor", "Basketball_game.Editor.csproj", "{CCD6CA17-C446-8452-6825-905F6BC9A795}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{EC229CD9-75DB-83EA-9B09-88D53AA7134D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC229CD9-75DB-83EA-9B09-88D53AA7134D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC229CD9-75DB-83EA-9B09-88D53AA7134D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD6CA17-C446-8452-6825-905F6BC9A795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD6CA17-C446-8452-6825-905F6BC9A795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD6CA17-C446-8452-6825-905F6BC9A795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD6CA17-C446-8452-6825-905F6BC9A795}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
